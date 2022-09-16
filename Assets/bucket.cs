@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class bucket : MonoBehaviour
 {
-public Rigidbody2D rb;
-public Vector2 vec;
-public float speed;
+
+    public Rigidbody2D rb;
+    public Vector2 vec;
+    public float speed;
+    public float endl, endr;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +19,12 @@ public float speed;
     // Update is called once per frame
     void Update()
     {
-
         vec.x = Input.GetAxis("Horizontal");
-        vec.y = Input.GetAxis("Vertical");
+
+
         
+
+        transform.position += (Vector3) vec * speed * Time.deltaTime;
         
-        
-       //transform.position += (Vector3) vec * speed * Time.deltaTime;
-       
-       
-       //rb.AddForce(vec * speed); 
     }
 }
