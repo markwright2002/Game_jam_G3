@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class obstacle : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class obstacle : MonoBehaviour
             if (obsCol.IsTouching(plrCol))
             {
 
+                SceneManager.LoadScene("death");
                 Destroy(player);
                 Destroy(exhast);
                 Destroy(gameObject);
