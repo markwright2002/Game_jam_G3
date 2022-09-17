@@ -7,6 +7,7 @@ public class bucket : MonoBehaviour
 
     public Rigidbody2D rb;
     public Vector2 vec;
+    public Vector3 vec3;
     public float speed;
     public float endl, endr;
 
@@ -25,6 +26,25 @@ public class bucket : MonoBehaviour
         
 
         transform.position += (Vector3) vec * speed * Time.deltaTime;
-        
+
+        if(transform.position[0] > endr){
+
+            vec3 = transform.position;
+            vec3[0] = endr;
+
+            transform.position = vec3;
+
+        }
+
+        if (transform.position[0] < endl)
+        {
+
+            vec3 = transform.position;
+            vec3[0] = endl;
+
+            transform.position = vec3;
+
+        }
+
     }
 }
