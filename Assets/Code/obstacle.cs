@@ -7,10 +7,19 @@ public class obstacle : MonoBehaviour
 
     public Vector2 vec;
     public float speed, x;
+    public GameObject player, exhast;
+    public Collider2D plrCol, obsCol;
     // Start is called before the first frame update
     void Start()
     {
         x = 0;
+        player = GameObject.Find("player");
+        exhast = GameObject.Find("exhast");
+        if (player)
+        {
+            plrCol = player.GetComponent<Collider2D>();
+        }
+
 
     }
 
@@ -24,6 +33,18 @@ public class obstacle : MonoBehaviour
         transform.position += (Vector3)vec * speed * Time.deltaTime;
 
         x += Time.deltaTime;
+        if (plrCol)
+        {
+            if (obsCol.IsTouching(plrCol))
+            {
+
+                Destroy(player);
+                Destroy(exhast);
+                Destroy(gameObject);
+
+            }
+        }
+
         if (x > 10)
         {
             Destroy(gameObject);
