@@ -4950,9 +4950,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   vec: {x: 0, y: 0}
-  speed: 5
-  endl: 10
-  endr: 10
+  vec3: {x: 0, y: 0, z: 0}
+  speed: 20
+  endl: -10.5
+  endr: 10.7
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5497,9 +5498,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   vec: {x: 0, y: 0}
-  speed: 5
-  endl: 10
-  endr: 10
+  vec3: {x: 0, y: 0, z: 0}
+  speed: 20
+  endl: -10.5
+  endr: 10.3
 --- !u!1 &1027385904
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,9 +5640,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   vec: {x: 0, y: 0}
+  vec3: {x: 0, y: 0, z: 0}
   speed: 30
-  endl: 0
-  endr: 0
+  endl: 36.8
+  endr: 90.7
 --- !u!212 &1200624888
 SpriteRenderer:
   m_ObjectHideFlags: 0
