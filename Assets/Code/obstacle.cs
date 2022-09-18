@@ -20,7 +20,7 @@ public class obstacle : MonoBehaviour
         {
             plrCol = player.GetComponent<Collider2D>();
         }
-
+        speed = globalVars.spd;
 
     }
 

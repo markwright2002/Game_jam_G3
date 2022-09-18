@@ -6,6 +6,7 @@ public class globalVars : MonoBehaviour
 {
 
     public static int engP, tireP, bodyP, HP;
+    public static float spd;
     void awake()
     {
         engP = 0;

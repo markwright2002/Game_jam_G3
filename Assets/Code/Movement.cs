@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        globalVars.HP = 3;
+        globalVars.HP = 300000;
     }
 
     // Update is called once per frame
