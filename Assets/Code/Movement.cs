@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
             transform.position = position;
         }
 
+     
+
         if (transform.position.x < leftConstraint)
         {
             Vector3 position = transform.position;
