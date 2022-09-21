@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4266904876958807161}
   - component: {fileID: 4266904876958807160}
   - component: {fileID: 4266904876958807163}
-  - component: {fileID: 6263496199000816028}
+  - component: {fileID: 6857072373587867535}
   m_Layer: 0
   m_Name: part
   m_TagString: Untagged
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.36325836, y: -0.16144657}
@@ -134,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.016582, y: 14.837038}
   m_EdgeRadius: 0
---- !u!114 &6263496199000816028
+--- !u!114 &6857072373587867535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,12 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4266904876958807162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ca9ba0a5bfdbcf49b18023cf8f9bfc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 17ffb55682c2e7044b9f4687db9d746c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vec: {x: 0, y: 0}
-  speed: 0
-  x: 0
-  hammer: {fileID: 0}
-  hmrCol: {fileID: 0}
-  prtCol: {fileID: 4266904876958807163}
+  isHorizontal: 1

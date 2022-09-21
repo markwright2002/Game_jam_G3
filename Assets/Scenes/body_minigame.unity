@@ -723,7 +723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929065465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.98, y: -38.39, z: 0}
+  m_LocalPosition: {x: 29.26, y: -38.48, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -742,7 +742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8578a912a657a428a4335a7a417f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obs: {fileID: 4266904876958807162, guid: 0c72caaa37474d548a34b4b2afe086c6, type: 3}
-  x: 0
-  y: 28.98
-  z: 28.98
+  gearPrefab: {fileID: 4266904876958807162, guid: 0c72caaa37474d548a34b4b2afe086c6, type: 3}
+  gearData: {fileID: 11400000, guid: 9c19eb131f83e7242b87b2c05ae4251c, type: 2}
+  initialPosition: {x: 29.26, y: -38.48, z: 0}
+  endPosition: {x: 29.26, y: -38.48, z: 0}
+  frequency: 2
