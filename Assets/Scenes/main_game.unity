@@ -4948,12 +4948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e1c27df56827e4d9a873a245008bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  vec: {x: 0, y: 0}
-  vec3: {x: 0, y: 0, z: 0}
-  speed: 20
-  endl: -10.5
-  endr: 10.7
 --- !u!1 &326113430
 GameObject:
   m_ObjectHideFlags: 0
@@ -5652,10 +5646,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8578a912a657a428a4335a7a417f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obs: {fileID: 1774608769742970140, guid: 0d7a0b3b26380854b940540d386a9d79, type: 3}
-  x: 0
-  y: -10
-  z: 10
+  gearPrefab: {fileID: 1774608769742970140, guid: 0d7a0b3b26380854b940540d386a9d79, type: 3}
+  gearData: {fileID: 11400000, guid: 3ddd1a2eae796764ea437d1060d7addd, type: 2}
+  initialPosition: {x: -10, y: 18, z: 0}
+  endPosition: {x: 10, y: 18, z: 0}
+  frequency: 1.5
 --- !u!1 &859178655
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,8 +5897,8 @@ GameObject:
   - component: {fileID: 1356450358}
   - component: {fileID: 1356450357}
   - component: {fileID: 1356450356}
+  - component: {fileID: 1356450360}
   - component: {fileID: 1356450354}
-  - component: {fileID: 1356450353}
   - component: {fileID: 1356450359}
   m_Layer: 0
   m_Name: player
@@ -5912,24 +5907,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1356450353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356450352}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e1c27df56827e4d9a873a245008bd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  vec: {x: 0, y: 0}
-  vec3: {x: 0, y: 0, z: 0}
-  speed: 20
-  endl: -10.5
-  endr: 10.3
 --- !u!61 &1356450354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5968,13 +5945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92e18e55117198408bc35b4162a965d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  vec: {x: 0, y: 0}
-  vec3: {x: 0, y: 0, z: 0}
   speed: 20
-  endl: -10.8
-  endr: 10.3
-  hp: 0
+  leftConstraint: -10
+  rightConstraint: 10
 --- !u!212 &1356450357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6035,7 +6008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356450352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -5.18, z: 0}
+  m_LocalPosition: {x: 0, y: -5.18, z: 0}
   m_LocalScale: {x: 0.3039725, y: 0.39405, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6050,7 +6023,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356450352}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6063,3 +6036,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1356450360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356450352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1917301cdfb08b84ea167125f837e0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
