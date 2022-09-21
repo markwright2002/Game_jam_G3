@@ -5634,10 +5634,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gearPrefab: {fileID: 1774608769742970140, guid: 0d7a0b3b26380854b940540d386a9d79, type: 3}
-  gearData: {fileID: 11400000, guid: 3ddd1a2eae796764ea437d1060d7addd, type: 2}
+  gearData: {fileID: 11400000, guid: ac818e3e77acd1e40b1734b36d435dc6, type: 2}
   initialPosition: {x: -10, y: 18, z: 0}
   endPosition: {x: 10, y: 18, z: 0}
-  frequency: 1.5
+  frequency: 1
 --- !u!1 &859178655
 GameObject:
   m_ObjectHideFlags: 0

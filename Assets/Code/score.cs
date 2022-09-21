@@ -28,7 +28,7 @@ public class score : MonoBehaviour
 
         if (x > 1){
 
-            Score += (1 * globalVars.spd);
+            Score += (1 * 10);
             x -= 1;
         }
 
