@@ -168,10 +168,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gearPrefab: {fileID: 7982471008280230888, guid: 58640d0dff811d345bf464aeb0057c05, type: 3}
+  bombPrefab: {fileID: 0}
   gearData: {fileID: 11400000, guid: 3ddd1a2eae796764ea437d1060d7addd, type: 2}
   initialPosition: {x: -30, y: 18, z: 0}
   endPosition: {x: 30, y: 18, z: 0}
   frequency: 1
+  bombChance: -1
 --- !u!1 &466612598
 GameObject:
   m_ObjectHideFlags: 0

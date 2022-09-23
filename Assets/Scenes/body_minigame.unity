@@ -1419,7 +1419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gearPrefab: {fileID: 4266904876958807162, guid: 0c72caaa37474d548a34b4b2afe086c6, type: 3}
+  bombPrefab: {fileID: 4702337978480104331, guid: 394df66f1420b0b48aa80b8e025148b2, type: 3}
   gearData: {fileID: 11400000, guid: 9c19eb131f83e7242b87b2c05ae4251c, type: 2}
   initialPosition: {x: 29.26, y: -38.48, z: 0}
   endPosition: {x: 29.26, y: -38.48, z: 0}
   frequency: 1
+  bombChance: 30
