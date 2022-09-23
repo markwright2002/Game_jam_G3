@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d448ae391549b4c88eb289768edc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2500
+  speed: 500
 --- !u!1 &1618948389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,4 +1422,4 @@ MonoBehaviour:
   gearData: {fileID: 11400000, guid: 9c19eb131f83e7242b87b2c05ae4251c, type: 2}
   initialPosition: {x: 29.26, y: -38.48, z: 0}
   endPosition: {x: 29.26, y: -38.48, z: 0}
-  frequency: 0.5
+  frequency: 1
