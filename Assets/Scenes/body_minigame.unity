@@ -1424,4 +1424,4 @@ MonoBehaviour:
   initialPosition: {x: 29.26, y: -38.48, z: 0}
   endPosition: {x: 29.26, y: -38.48, z: 0}
   frequency: 1
-  bombChance: 30
+  bombChance: 10
