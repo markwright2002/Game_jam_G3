@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MinigameTimer : MonoBehaviour
 {
@@ -23,5 +24,6 @@ public class MinigameTimer : MonoBehaviour
         }
         EventManager.InvokeOnMinigameEnd();
         StopAllCoroutines();
+        SceneManager.LoadScene("Garage_mainmenu");
     }
 }
