@@ -6,7 +6,7 @@ public class Bar_Inc : MonoBehaviour
 {
     public float i,n,q;
     private Vector3 StartPos;
-    [SerializeField] private float End_Time;
+    [SerializeField] public float End_Time;
     public bool Did_End = false;
     public float xHigh_Bound, x_bound;
     // Start is called before the first frame update

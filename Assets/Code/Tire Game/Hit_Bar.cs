@@ -40,19 +40,21 @@ public class Hit_Bar : MonoBehaviour
             
             if (transform.position.x >= (GameObject.Find("Hit Zone").transform.position.x-2) && transform.position.x <= (GameObject.Find("Hit Zone").transform.position.x+1))
             {
-                low = false;
-                high = false;
-                hit = true;
-                transform.Translate(Vector2.zero * 1 * Time.deltaTime);
+                //low = false;
+                //high = false;
+                //hit = true;
+                //transform.Translate(Vector2.zero * 1 * Time.deltaTime);
                 Debug.Log("You hit");
+                EventManager.InvokeOnHit();
             }
-            else if (hit == false)
+            else
             {
-                low = false;
-                high = false;
-                transform.Translate(Vector2.zero * 1 * Time.deltaTime);
-                Debug.Log("you missed");              
-                
+                //low = false;
+                //high = false;
+                //transform.Translate(Vector2.zero * 1 * Time.deltaTime);
+                Debug.Log("you missed");
+                EventManager.InvokeOnMiss();
+
             }
             
 
