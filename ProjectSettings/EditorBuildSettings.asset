@@ -6,6 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/main_game.unity
+    guid: 646e6ca067d95e14d8491f98b2b9eb2b
+  - enabled: 1
+    path: Assets/Scenes/tire_minigame.unity
+    guid: 554ef7e850354b4408971bdd1df48235
+  - enabled: 1
+    path: Assets/Scenes/body_minigame.unity
+    guid: 3fbcda4e0bbeca946afecfe1eea2b0a8
+  - enabled: 1
+    path: Assets/Scenes/death.unity
+    guid: ac32c9002a9ee2b498482e50bc5d285a
+  - enabled: 1
+    path: Assets/Scenes/Endless_style_select.unity
+    guid: 4596c79bbc69b764eaef5dfcbb78c80c
+  - enabled: 1
+    path: Assets/Scenes/Minigame_select.unity
+    guid: a0b501f6257eeb444b06b7210998edaa
+  - enabled: 1
+    path: Assets/Scenes/engine_minigame.unity
+    guid: b805dfd167d198f4da6dc1392059ad4f
+  - enabled: 1
+    path: Assets/Scenes/garage_mainmenu.unity
+    guid: 4c21b3dec52dd0241b7ce6308f3ea15c
+  - enabled: 1
+    path: Assets/Scenes/Image_scroll.unity
+    guid: 841d1c774bc0a0f478a02929d2c586cc
   m_configObjects: {}
