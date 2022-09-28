@@ -3,7 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class Car : MonoBehaviour
 {
-    public int health;
+    public static int health;
+    void Start()
+    {
+        health = 5;
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         health -= 1;
