@@ -41,4 +41,8 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Minigame_select");
     }
+    public void ToCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
